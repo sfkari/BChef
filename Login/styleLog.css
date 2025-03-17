@@ -1,0 +1,273 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-size: 16px;
+  font-style: normal;
+  letter-spacing: 1px;
+  color: black;
+  background-image: url(../images/Menu.svg);
+  background-size: cover;
+  background-repeat: repeat;
+  color: white;
+  overflow: hidden;
+}
+
+
+
+h1{
+  font-family: "Archivo Black", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 40px;
+  color: #EAA90C;
+}
+
+h2{
+  padding: 10px 0;
+  font-family: "Archivo Black", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 30px;
+  color: #EAA90C;
+}
+
+h3{
+   padding: 10px 0;
+   font-family: "Archivo Black", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 20px;
+  color: #EAA90C;
+}
+
+
+
+/* Login & sign up ----------------------------------------------------------------------------------------------------------------------------- */
+.login {
+  background-image: url(../images/loginBg.svg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  text-align: center;
+}
+
+.login-box {
+  width: 50%;
+  position: absolute;
+  top: 1%;
+  left: 3%;
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.05085784313725494) 60%, #ffffff0f 100%);
+  border-radius: 25px;
+  padding: 20px 40px;
+  text-align: center;
+}
+
+.login-box h2 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  margin: 0 0 30px;
+  padding: 0;
+  color:#EAA90C;
+  text-align: center;
+}
+.login-box h1 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color:#EAA90C;
+  margin: 30px 0;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input , .user-box textarea {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color:#EAA90C;
+  font-size: 12px;
+}
+
+.login-box .user-box textarea:focus ~ label,
+.login-box .user-box textarea:valid ~ label {
+  top: -20px;
+  left: 0;
+  color:#EAA90C;
+  font-size: 12px;
+}
+
+input[type=submit] , textarea {
+  background-color: #ffffff0f;
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  letter-spacing: 4px;
+}
+
+.squaredThree {
+  width: 20px;
+  position: relative;
+}
+.squaredThree label {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffffff0f;
+  border-radius: 4px;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.4);
+}
+.squaredThree label:after {
+  content: '';
+  width: 15px;
+  height: 10px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border: 3px solid #fcfff4;
+  border-top: none;
+  border-right: none;
+  background: transparent;
+  opacity: 0;
+  transform: rotate(-45deg);
+}
+.squaredThree label:hover::after {
+  opacity: 0.3;
+}
+.squaredThree input[type=checkbox] {
+  visibility: hidden;
+}
+.squaredThree input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
+.login-box a{
+  color: white;
+}
+.slideshow {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.slideshow ul{
+  list-style-type: none;
+  width: 100%;
+  
+
+}
+.slideshow li span { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 30s linear infinite 0s; 
+    background-size: contain;
+    background-position: center;
+    
+}
+
+
+.slideshow li:nth-child(1) span { 
+    background-image: url("../images/plat2.png"); 
+    
+}
+.slideshow li:nth-child(2) span { 
+    background-image: url("../images/plat6.png");
+    animation-delay: 6s; 
+}
+.slideshow li:nth-child(3) span { 
+    background-image: url("../images/plat9.png");
+    animation-delay: 12s; 
+}
+.slideshow li:nth-child(4) span { 
+    background-image: url("../images/plat8.png");   
+    animation-delay: 18s; 
+}
+.slideshow li:nth-child(5) span { 
+    background-image: url("../images/plat.png");
+    animation-delay: 24s; 
+}
+
+.contact{
+  padding: 120px 0;
+}
+.contact a{
+  text-decoration: none;
+  color: white;
+}
+
+@keyframes imageAnimation { 
+    0% { opacity: 0; animation-timing-function: ease-in; }
+    8% { opacity: 1; animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+
+@media screen and (max-width: 700px) {
+	.login-box {
+		width: 100%;
+	}
+	
+}
+
+
+
+.success-msg {
+  color: rgb(47, 163, 1);
+  background-color: #d5f3a2;
+}
+
+.error-msg {
+  color: #D8000C;
+  background-color: #fa9090;
+}

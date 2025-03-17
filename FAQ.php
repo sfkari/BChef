@@ -1,0 +1,129 @@
+<?php
+include './database/database.php';
+include './database/header.php';
+include './database/footer.php';
+
+$connexion = connexion();
+page_header();
+
+
+?>
+
+<main>
+  <section class="section2">
+    <div class="container block-blog">
+      <h2>Questions Fréquemment Posées (FAQ)</h2>
+      <div class="wrapper ">
+        <input type="radio" id="radioYour Account" name="accordion" checked="checked" />
+        <label class="item" for="radioYour Account">
+          <div class="title">Quel type de recettes puis-je trouver sur ce site ?</div>
+          <div class="content">Sur notre site, vous trouverez une variété de recettes pour tous les goûts et toutes les
+            occasions. Des recettes simples et rapides aux plats plus élaborés pour impressionner vos invités, nous
+            avons de tout : des entrées aux desserts, en passant par les plats principaux et les accompagnements.</div>
+        </label>
+        <input type="radio" id="radioPayment &amp; Pricing" name="accordion" />
+        <label class="item" for="radioPayment &amp; Pricing">
+          <div class="title">Comment puis-je rechercher des recettes spécifiques ?</div>
+          <div class="content">Vous pouvez utiliser notre barre de recherche en haut de la page pour entrer des
+            mots-clés spécifiques tels que le nom d'un plat, un ingrédient principal ou une cuisine régionale. Vous
+            pouvez également parcourir nos catégories de recettes pour trouver l'inspiration.</div>
+        </label>
+        <input type="radio" id="radioReturns &amp; Refunds" name="accordion" />
+        <label class="item" for="radioReturns &amp; Refunds">
+          <div class="title">Les recettes sont-elles adaptées à des régimes alimentaires spécifiques ?</div>
+          <div class="content">Oui, nous avons une sélection de recettes adaptées à divers régimes alimentaires, y
+            compris végétarien, végétalien, sans gluten, sans lactose, et bien d'autres. Vous pouvez filtrer vos
+            résultats de recherche en fonction de vos besoins alimentaires spécifiques.</div>
+        </label>
+        <input type="radio" id="radioShipping &amp; Pickup" name="accordion" />
+        <label class="item" for="radioShipping &amp; Pickup">
+          <div class="title">Est-ce que les recettes sont accompagnées de photos ?</div>
+          <div class="content">Oui, la plupart de nos recettes sont accompagnées de photos appétissantes pour vous
+            donner une idée de ce à quoi votre plat devrait ressembler. Nous pensons que la présentation visuelle est
+            importante pour vous aider à choisir les recettes qui vous conviennent.</div>
+        </label>
+        <input type="radio" id="radioViewing &amp; Changing Orders" name="accordion" />
+        <label class="item" for="radioViewing &amp; Changing Orders">
+          <div class="title">Comment puis-je contacter l'équipe du site pour poser des questions ou signaler un problème
+            ?</div>
+          <div class="content">Si vous avez des questions, des commentaires ou rencontrez des problèmes techniques sur
+            notre site, n'hésitez pas à nous contacter via notre formulaire de contact. Notre équipe est là pour vous
+            aider et prendra rapidement en charge vos demandes.</div>
+        </label>
+      </div>
+    </div>
+
+  </section>
+
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 d-flex justify-content-center py-5">
+        <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none ">
+          <img src="images/logo22.png" alt="logo" width="150px">
+        </a>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-7 text-center">
+        <span>COMMUNAUTE</span>
+        <h3>Suivez nous sur les réseaux</h3>
+        <p class="py-2 text-center">Rejoignez-nous sur les réseaux sociaux pour partager, apprendre et grandir
+          ensemble dans
+          notre quête de recettes écologiques et économiques. Votre voix compte, et nous sommes impatients de vous
+          accueillir dans notre communauté engagée !</p>
+        </a>
+      </div>
+    </div>
+    <div class="row justify-content-center  pb-5">
+      <div class="col-md-6 d-flex justify-content-center gap-5">
+        <div class="text-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-facebook"
+            viewBox="0 0 16 16">
+            <path
+              d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+          </svg>
+          <h5>Facebook</h5>
+        </div>
+        <div class="text-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-instagram"
+            viewBox="0 0 16 16">
+            <path
+              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+          </svg>
+          <h5>Instagram</h5>
+        </div>
+
+        <div class="text-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-pinterest"
+            viewBox="0 0 16 16">
+            <path
+              d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0" />
+          </svg>
+          <h5>Pinterest</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="py-2">
+      <p class="float-end"><a href="#">Back to top</a></p>
+      <p>©2024 By SFA Karima · <a href="#">Privacy & Terms</a> · <a href="#">FAQs</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  crossorigin="anonymous"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+<script src="js/script.js"></script>
+
+
+
+
+</body>
+
+</html>
